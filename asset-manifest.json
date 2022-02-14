@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/CoderDevReact/static/css/main.073c9b0a.css",
+    "main.js": "/CoderDevReact/static/js/main.f00d973e.js",
+    "static/js/787.a9823623.chunk.js": "/CoderDevReact/static/js/787.a9823623.chunk.js",
+    "static/media/logo.svg": "/CoderDevReact/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/CoderDevReact/index.html",
+    "main.073c9b0a.css.map": "/CoderDevReact/static/css/main.073c9b0a.css.map",
+    "main.f00d973e.js.map": "/CoderDevReact/static/js/main.f00d973e.js.map",
+    "787.a9823623.chunk.js.map": "/CoderDevReact/static/js/787.a9823623.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.f00d973e.js"
+  ]
+}
