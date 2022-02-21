@@ -31,8 +31,8 @@ function App() {
       <br/>
       <br/>
       <br/>
-      <ItemListContainer titleItem={'Vieaje a Bariloche'} ></ItemListContainer>
-      <ItemListContainer titleItem={'Vieaje a Rosario'} ></ItemListContainer>
+      <ItemListContainer titleItem={'Viaje a Bariloche'} ></ItemListContainer>
+      <ItemListContainer titleItem={'Viaje a Rosario'} ></ItemListContainer>
     </div>
 
   );
