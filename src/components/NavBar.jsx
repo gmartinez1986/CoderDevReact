@@ -5,6 +5,8 @@ import '../styles/css/bootstrap.css';
 
 import companyLogo from '../assets/img/turismo-min.png';
 
+import CartWidget from '../components/CartWidget';
+
 const Navbar = () => {
 	return (
 		<nav className="navbar navbar-expand-md navbar-light header__containerHeader">
@@ -37,9 +39,9 @@ const Navbar = () => {
 						<li className="nav-item"><a className="nav-link" href=""><b>DESTINOS</b></a>
 						</li>
 						<li className="nav-item"><a className="nav-link" href=""><b>OFERTAS</b></a></li>
-						<li className="nav-item"><a className="nav-link" href="">
-							<span className='material-icons'>shopping_cart</span>
-							<span id="count"></span></a></li>
+		
+		                <CartWidget/>
+
 						<li className="nav-item"><a className="nav-link" href=""><span
 							className="material-icons email">email</span></a></li>
 					</ul>
