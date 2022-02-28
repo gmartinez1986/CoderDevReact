@@ -1,8 +1,16 @@
 
+import ItemCount from '../components/ItemCount';
+
+const onAdd = (cant) => {
+    alert(`Se han agregado ${cant}  paquetes turisticos al carrito`);
+ }
+
 const ItemListContainer = (prop) => {
     return (
-
-        <h1>{prop.titleItem}</h1>
+        
+        <>
+            <ItemCount initial={1} stock={10} onAdd={onAdd} />
+        </>
 
     );
 };

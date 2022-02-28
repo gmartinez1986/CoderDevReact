@@ -3,6 +3,7 @@ import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
 import { Helmet } from "react-helmet";
 
+
 function App() {
   return (
 
@@ -22,7 +23,7 @@ function App() {
           integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
           crossorigin="anonymous"></script>
       </Helmet>
-      <header class="header">
+      <header className="header">
         <NavBar />
       </header>
       <br/>
@@ -32,7 +33,6 @@ function App() {
       <br/>
       <br/>
       <ItemListContainer titleItem={'Viaje a Bariloche'} ></ItemListContainer>
-      <ItemListContainer titleItem={'Viaje a Rosario'} ></ItemListContainer>
     </div>
 
   );
