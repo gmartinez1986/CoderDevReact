@@ -9,6 +9,12 @@ const ItemDetail = ({ product }) => {
             <br />
             Detalle: {product.description}
             <br />
+            Precio: {product.price}
+            <br />
+            <div className="card-body">
+                <img src={require(`../assets/img/${product.image}`)} alt='' className='w-50' />
+            </div>
+            <br />
         </>
     )
 }
