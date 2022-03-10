@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/CoderDevReact/static/css/main.4044dbf8.css",
-    "main.js": "/CoderDevReact/static/js/main.ff8ebbe7.js",
+    "main.css": "/CoderDevReact/static/css/main.ab190adc.css",
+    "main.js": "/CoderDevReact/static/js/main.2571b480.js",
     "static/js/787.a9823623.chunk.js": "/CoderDevReact/static/js/787.a9823623.chunk.js",
     "static/media/fa-solid-900.svg": "/CoderDevReact/static/media/fa-solid-900.45690f4345fd0e303e35.svg",
     "static/media/fa-brands-400.svg": "/CoderDevReact/static/media/fa-brands-400.675f6734fc707ee98601.svg",
@@ -80,12 +80,12 @@
     "static/media/turismo-min.png": "/CoderDevReact/static/media/turismo-min.7903062fdbae8574929f.png",
     "static/media/fa-regular-400.woff2": "/CoderDevReact/static/media/fa-regular-400.7a3337626410ca2f4071.woff2",
     "index.html": "/CoderDevReact/index.html",
-    "main.4044dbf8.css.map": "/CoderDevReact/static/css/main.4044dbf8.css.map",
-    "main.ff8ebbe7.js.map": "/CoderDevReact/static/js/main.ff8ebbe7.js.map",
+    "main.ab190adc.css.map": "/CoderDevReact/static/css/main.ab190adc.css.map",
+    "main.2571b480.js.map": "/CoderDevReact/static/js/main.2571b480.js.map",
     "787.a9823623.chunk.js.map": "/CoderDevReact/static/js/787.a9823623.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4044dbf8.css",
-    "static/js/main.ff8ebbe7.js"
+    "static/css/main.ab190adc.css",
+    "static/js/main.2571b480.js"
   ]
 }
