@@ -24,7 +24,7 @@ function ItemList({ greeting }) {
                 packages.map((pack) =>
 
                     <div key={pack.id}>
-                        <Item name={pack.name} image={pack.image} price={pack.price} description={pack.description} />
+                        <Item idPack={pack.id} name={pack.name} image={pack.image} price={pack.price} description={pack.description} />
                     </div>
                 )
             }

@@ -1,8 +1,10 @@
-import './App.css';
+
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer';
 import { Helmet } from "react-helmet";
 
+import './App.css';
 
 function App() {
   return (
@@ -26,12 +28,14 @@ function App() {
       <header className="header">
         <NavBar />
       </header>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <ItemDetailContainer></ItemDetailContainer>
+      <br />
       <ItemListContainer titleItem={'Viaje a Bariloche'} ></ItemListContainer>
     </div>
 
