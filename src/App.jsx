@@ -1,7 +1,8 @@
-
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
+import Footer from './components/Footer';
 import { Helmet } from "react-helmet";
 
 import './App.css';
@@ -9,7 +10,7 @@ import './App.css';
 function App() {
   return (
 
-    <div>
+    <>
       <Helmet>
         <meta charSet="utf-8" />
         <title>Agencia de Turismo</title>
@@ -25,19 +26,20 @@ function App() {
           integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
           crossorigin="anonymous"></script>
       </Helmet>
-      <header className="header">
-        <NavBar />
-      </header>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <ItemDetailContainer></ItemDetailContainer>
-      <br />
-      <ItemListContainer titleItem={'Viaje a Bariloche'} ></ItemListContainer>
-    </div>
+
+      <BrowserRouter>
+        <header className="header">
+          <NavBar />
+        </header>
+        <Routes>
+          <Route path='/' element={<ItemListContainer/>} />
+          <Route path='/category/:categoryId' element={<ItemListContainer/>} />
+
+        </Routes>
+      </BrowserRouter>
+
+      <Footer />
+    </>
 
   );
 }

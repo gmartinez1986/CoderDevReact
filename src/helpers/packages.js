@@ -1,7 +1,7 @@
 export const packages = [
     {
         "id": 1,
-        "idPackage": 1,
+        "categoryId": 'offers',
         "name": "Findes Largos y Feriados",
         "price": 27300,
         "image": "viajesVacacionesFeriadoFindeLargo-min.jpg",
@@ -10,7 +10,7 @@ export const packages = [
     },
     {
         "id": 2,
-        "idPackage": 1,
+        "categoryId": "offers",
         "name": "Noroeste Argentino",
         "price": 30000,
         "image": "noaMontana7Colores-min.jpg",
@@ -19,7 +19,7 @@ export const packages = [
     },
     {
         "id": 3,
-        "idPackage": 1,
+        "categoryId": "offers",
         "name": "Merlo y Carlos Paz",
         "price": 20000,
         "image": "viajesMerloSanLuisSierras-min.jpg",
@@ -28,7 +28,7 @@ export const packages = [
     },
     {
         "id": 4,
-        "idPackage": 1,
+        "categoryId": "offers",
         "name": "San Juan y La Rioja",
         "price": 40000,
         "image": "campoPiedraPomezExcursiones-min.jpg",
@@ -37,7 +37,7 @@ export const packages = [
     },
     {
         "id": 5,
-        "idPackage": 1,
+        "categoryId": "offers",
         "name": "Bariloche",
         "price": 50000,
         "image": "viajesBarilocheDesdeRosario-min.jpg",
@@ -46,7 +46,7 @@ export const packages = [
     },
     {
         "id": 6,
-        "idPackage": 1,
+        "categoryId": "offers",
         "name": "Puerto Madryn",
         "price": 60000,
         "image": "madrynNavegacionBallenas-min.jpg",
@@ -55,7 +55,7 @@ export const packages = [
     },
     {
         "id": 7,
-        "idPackage": 1,
+        "categoryId": "offers",
         "name": "El Calafate + Ushuaia",
         "price": 60000,
         "image": "ushuaiaViajesExcursionesFaro-min.jpg",
@@ -64,7 +64,7 @@ export const packages = [
     },
     {
         "id": 8,
-        "idPackage": 1,
+        "categoryId": "offers",
         "name": "Costa Atlántica",
         "price": 80000,
         "image": "costaAtlanticaVacaciones-min.jpg",
@@ -73,7 +73,7 @@ export const packages = [
     },
     {
         "id": 9,
-        "idPackage": 1,
+        "categoryId": "offers",
         "name": "Noroeste en Avión",
         "price": 70000,
         "image": "viajesNoroesteAereoDesdeRosario-min.jpg",
@@ -82,7 +82,7 @@ export const packages = [
     },
     {
         "id": 10,
-        "idPackage": 2,
+        "categoryId": 2,
         "name": "Bariloche en Avión",
         "price": 30000,
         "image": "bariloche-min.jpg",
@@ -91,7 +91,7 @@ export const packages = [
     },
     {
         "id": 11,
-        "idPackage": 2,
+        "categoryId": 2,
         "name": "Rosario en Bus",
         "price": 20000,
         "image": "rosario-min.jpg",
@@ -100,7 +100,7 @@ export const packages = [
     },
     {
         "id": 12,
-        "idPackage": 2,
+        "categoryId": 2,
         "name": "Mendoza",
         "price": 40000,
         "image": "mendoza-min.jpg",
@@ -109,7 +109,7 @@ export const packages = [
     },
     {
         "id": 13,
-        "idPackage": 2,
+        "categoryId": 2,
         "name": "Caba en Avión",
         "price": 25000,
         "image": "caba-min.jpg",
@@ -118,7 +118,7 @@ export const packages = [
     },
     {
         "id": 14,
-        "idPackage": 2,
+        "categoryId": 2,
         "name": "Mar del Plata",
         "price": 32000,
         "image": "caba-min.jpg",
@@ -127,7 +127,7 @@ export const packages = [
     },
     {
         "id": 15,
-        "idPackage": 2,
+        "categoryId": 2,
         "name": "Costa Atlántica",
         "price": 18000,
         "image": "CostaAtlantica-min.jpg",
@@ -136,7 +136,7 @@ export const packages = [
     },
     {
         "id": 16,
-        "idPackage": 3,
+        "categoryId": 3,
         "name": "Playas de Cuba",
         "price": 120000,
         "image": "cuba-min.jpg",
@@ -145,7 +145,7 @@ export const packages = [
     },
     {
         "id": 17,
-        "idPackage": 3,
+        "categoryId": 3,
         "name": "República Dominicana",
         "price": 80000,
         "image": "vacaciones-caribe-desde-rosario.jpg",
@@ -154,7 +154,7 @@ export const packages = [
     },
     {
         "id": 18,
-        "idPackage": 3,
+        "categoryId": 3,
         "name": "Caribe Colombiano",
         "price": 75000,
         "image": "cartagena-colombia-min.jpg",
@@ -163,7 +163,7 @@ export const packages = [
     },
     {
         "id": 19,
-        "idPackage": 3,
+        "categoryId": 3,
         "name": "Cancún y Costa Mujeres",
         "price": 65000,
         "image": "playa-carmen-hoteles-all-inclusive-min.jpg",
@@ -181,7 +181,7 @@ export const packages = [
     },
     {
         "id": 21,
-        "idPackage": 3,
+        "categoryId": 3,
         "name": "Cuba Entre Amigos",
         "price": 50000,
         "image": "habana-cuba-min.jpg",
@@ -190,7 +190,7 @@ export const packages = [
     },
     {
         "id": 22,
-        "idPackage": 4,
+        "categoryId": 4,
         "name": "Rio de Janeiro",
         "price": 40000,
         "image": "janeiro-min.jpg",
@@ -199,7 +199,7 @@ export const packages = [
     },
     {
         "id": 23,
-        "idPackage": 4,
+        "categoryId": 4,
         "name": "Búzios",
         "price": 45000,
         "image": "buzios-min.jpg",
@@ -208,7 +208,7 @@ export const packages = [
     },
     {
         "id": 24,
-        "idPackage": 4,
+        "categoryId": 4,
         "name": "Salvador de Bahía e Imbassai",
         "price": 35000,
         "image": "salvador-de-bahia-min.jpg",
@@ -217,7 +217,7 @@ export const packages = [
     },
     {
         "id": 25,
-        "idPackage": 4,
+        "categoryId": 4,
         "name": "Natal y Pipa",
         "price": 35000,
         "image": "salvador-de-bahia-min.jpg",
@@ -226,7 +226,7 @@ export const packages = [
     },
     {
         "id": 26,
-        "idPackage": 4,
+        "categoryId": 4,
         "name": "Recife y Porto de Galinhas",
         "price": 30000,
         "image": "porto-galinhas-min.jpg",
@@ -235,7 +235,7 @@ export const packages = [
     },
     {
         "id": 27,
-        "idPackage": 4,
+        "categoryId": 4,
         "name": "Camboriú",
         "price": 25000,
         "image": "camboriu-min.jpg",
@@ -244,7 +244,7 @@ export const packages = [
     },
     {
         "id": 28,
-        "idPackage": 5,
+        "categoryId": 5,
         "name": "España, Portugal y Marruecos",
         "price": 80000,
         "image": "espana-min.jpg",
@@ -253,7 +253,7 @@ export const packages = [
     },
     {
         "id": 29,
-        "idPackage": 5,
+        "categoryId": 5,
         "name": "Europa Clásica",
         "price": 90000,
         "image": "barcelona-espana-min.jpg",
@@ -262,7 +262,7 @@ export const packages = [
     },
     {
         "id": 30,
-        "idPackage": 5,
+        "categoryId": 5,
         "name": "Europa Clásica + Londres",
         "price": 100000,
         "image": "londres-min.jpg",
@@ -271,7 +271,7 @@ export const packages = [
     },
     {
         "id": 31,
-        "idPackage": 5,
+        "categoryId": 5,
         "name": "Paisajes de Europa",
         "price": 100000,
         "image": "viajes-viena-austria-centro-min.jpg",
@@ -280,7 +280,7 @@ export const packages = [
     },
     {
         "id": 32,
-        "idPackage": 5,
+        "categoryId": 5,
         "name": "Europa para todos",
         "price": 130000,
         "image": "venecia-min.jpg",
@@ -289,7 +289,7 @@ export const packages = [
     },
     {
         "id": 33,
-        "idPackage": 5,
+        "categoryId": 5,
         "name": "Sur de Italia + Grecia",
         "price": 120000,
         "image": "roma-italia-coliseo-min.jpg",
@@ -298,7 +298,7 @@ export const packages = [
     },
     {
         "id": 34,
-        "idPackage": 6,
+        "categoryId": 6,
         "name": "Turquía Grupal",
         "price": 80000,
         "image": "viajes-turquia-min.jpg",
@@ -307,7 +307,7 @@ export const packages = [
     },
     {
         "id": 35,
-        "idPackage": 6,
+        "categoryId": 6,
         "name": "Grecia y Turquia",
         "price": 90000,
         "image": "santorini-grecia-min.jpg",
@@ -316,7 +316,7 @@ export const packages = [
     },
     {
         "id": 36,
-        "idPackage": 6,
+        "categoryId": 6,
         "name": "Egipto con Playa",
         "price": 95000,
         "image": "egipto-templo-philae-min.jpg",
@@ -325,7 +325,7 @@ export const packages = [
     },
     {
         "id": 37,
-        "idPackage": 6,
+        "categoryId": 6,
         "name": "Joyas del medio Oriente",
         "price": 100000,
         "image": "jardin-persa-israel-haifa-min.jpg",

@@ -4,7 +4,7 @@ import '../styles/font-google.css';
 import '../styles/css/bootstrap.css';
 
 import companyLogo from '../assets/img/turismo-min.png';
-
+import { Link } from 'react-router-dom'
 import CartWidget from '../components/CartWidget';
 
 const Navbar = () => {
@@ -30,24 +30,30 @@ const Navbar = () => {
 
 					<ul className="nav navbar-nav menu">
 						<li className="nav-item">
-							<a className="nav-link" href="#">
-								<span className="material-icons home">home</span>
-							</a>
+							<Link to="/" >
+								<a className="nav-link" href="">
+									<span className="material-icons home">home</span>
+								</a>
+							</Link>
 						</li>
-						<li className="nav-item"><a className="nav-link"
-							href=""><b>ARGENTINA</b></a></li>
+						<li className="nav-item">
+							<Link to="category/argentina" >
+								<a className="nav-link"
+									href=""><b>ARGENTINA</b></a>
+							</Link>
+						</li>
 						<li className="nav-item"><a className="nav-link" href=""><b>DESTINOS</b></a>
 						</li>
 						<li className="nav-item"><a className="nav-link" href=""><b>OFERTAS</b></a></li>
-		
-		                <CartWidget/>
+
+						<CartWidget />
 
 						<li className="nav-item"><a className="nav-link" href=""><span
 							className="material-icons email">email</span></a></li>
 					</ul>
 				</div>
-			</div>
-		</nav>
+			</div >
+		</nav >
 	);
 };
 

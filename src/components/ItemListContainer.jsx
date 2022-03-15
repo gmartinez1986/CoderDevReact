@@ -1,5 +1,6 @@
 import ItemCount from '../components/ItemCount';
 import ItemList from '../components/ItemList';
+import { useParams } from "react-router-dom"
 
 const onAdd = (cant) => {
     alert(`Se han agregado ${cant}  paquetes turisticos al carrito`);
@@ -7,11 +8,23 @@ const onAdd = (cant) => {
 
 function ItemListContainer() {
 
+    const {categoryId} = useParams();
+
     return (
         <>
-            <ItemCount initial={1} stock={10} onAdd={onAdd} />
+            <main class="main">
+                <section class="main--grid">
 
-            <ItemList/>
+                    <div class="container offers">
+                        <h2 class="titles--subtitlesH2">Destacados</h2>
+                        <div class="row">
+
+                            <ItemList categoryId={categoryId} />
+
+                        </div>
+                    </div>
+                </section>
+            </main>
         </>
     );
 };
