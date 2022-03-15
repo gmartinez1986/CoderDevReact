@@ -82,7 +82,7 @@ export const packages = [
     },
     {
         "id": 10,
-        "categoryId": 2,
+        "categoryId": "argentina",
         "name": "Bariloche en Avión",
         "price": 30000,
         "image": "bariloche-min.jpg",
@@ -91,7 +91,7 @@ export const packages = [
     },
     {
         "id": 11,
-        "categoryId": 2,
+        "categoryId": "argentina",
         "name": "Rosario en Bus",
         "price": 20000,
         "image": "rosario-min.jpg",
@@ -100,7 +100,7 @@ export const packages = [
     },
     {
         "id": 12,
-        "categoryId": 2,
+        "categoryId": "argentina",
         "name": "Mendoza",
         "price": 40000,
         "image": "mendoza-min.jpg",
@@ -109,7 +109,7 @@ export const packages = [
     },
     {
         "id": 13,
-        "categoryId": 2,
+        "categoryId": "argentina",
         "name": "Caba en Avión",
         "price": 25000,
         "image": "caba-min.jpg",
@@ -118,7 +118,7 @@ export const packages = [
     },
     {
         "id": 14,
-        "categoryId": 2,
+        "categoryId": "argentina",
         "name": "Mar del Plata",
         "price": 32000,
         "image": "caba-min.jpg",
@@ -127,7 +127,7 @@ export const packages = [
     },
     {
         "id": 15,
-        "categoryId": 2,
+        "categoryId": "argentina",
         "name": "Costa Atlántica",
         "price": 18000,
         "image": "CostaAtlantica-min.jpg",

@@ -8,21 +8,35 @@ const onAdd = (cant) => {
 
 function ItemListContainer() {
 
-    const {categoryId} = useParams();
+    const { categoryId } = useParams();
 
     return (
         <>
             <main class="main">
                 <section class="main--grid">
 
-                    <div class="container offers">
-                        <h2 class="titles--subtitlesH2">Destacados</h2>
-                        <div class="row">
+                    {categoryId === undefined && (
+                        <div class="container offers">
+                            <h2 class="titles--subtitlesH2">Destacados</h2>
+                            <div class="row">
 
-                            <ItemList categoryId={categoryId} />
+                                <ItemList categoryId={categoryId} />
 
+                            </div>
                         </div>
-                    </div>
+                    )
+                    ||
+                    (
+                        <div class="container packages">
+                            <h2 class="titles--subtitlesH2">Paquetes Locales</h2>
+                            <div class="row">
+
+                                <ItemList categoryId={categoryId} />
+
+                            </div>
+                        </div>
+                    )}
+
                 </section>
             </main>
         </>

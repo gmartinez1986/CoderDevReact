@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom"
+import { useParams } from "react-router-dom";
+import Card  from "./Card";
 import getFetch from "../helpers/getFetch";
 import Item from "./Item";
 
@@ -14,18 +15,18 @@ function ItemList({ greeting }) {
 
         if (categoryId) {
             getFetch
-                .then((respuesta) => {
-                    return respuesta
+                .then((response) => {
+                    return response
                 })
-                .then((resp) => setPackages(resp.filter(pro => pro.categoryId == categoryId)))
+                .then((resp) => setPackages(resp.filter(pro => pro.categoryId === categoryId)))
                 .catch(err => console.log(err))
                 .finally(() => setLoading(false));
         } else {
             getFetch
-                .then((respuesta) => {
-                    return respuesta
+                .then((response) => {
+                    return response
                 })
-                .then((resp) => setPackages(resp.filter(pro => pro.categoryId == "offers")))
+                .then((resp) => setPackages(resp.filter(pro => pro.categoryId === "offers")))
                 .catch(err => console.log(err))
                 .finally(() => setLoading(false));
         }
@@ -38,8 +39,13 @@ function ItemList({ greeting }) {
             {loading ? <h1>Cargando...</h1> :
                 packages.map((pack) =>
 
-                    <Item idPack={pack.id} name={pack.name} image={pack.image} price={pack.price} description={pack.description} />
-
+                    categoryId === undefined && (
+                        <Item idPack={pack.id} name={pack.name} image={pack.image} price={pack.price} description={pack.description} />
+                    ) 
+                    ||
+                    (
+                        <Card idPack={pack.id} name={pack.name} image={pack.imageDescription} price={pack.price} description={pack.description}/>
+                    )
                 )
             }
 

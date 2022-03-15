@@ -14,7 +14,7 @@ function Item({ name, image, price, description }) {
                     </div>
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <p class="offers__offerContainer--price">$ {price}</p>
+                            <p class="offers__offerContainer--price">$ {price.toLocaleString('es-es')}</p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <a href="#" data-bs-toggle="modal" data-bs-target="#myModal"
