@@ -16,6 +16,7 @@ function ItemListContainer() {
                 <section class="main--grid">
 
                     {categoryId === undefined && (
+
                         <div class="container offers">
                             <h2 class="titles--subtitlesH2">Destacados</h2>
                             <div class="row">
@@ -25,17 +26,19 @@ function ItemListContainer() {
                             </div>
                         </div>
                     )
-                    ||
-                    (
-                        <div class="container packages">
-                            <h2 class="titles--subtitlesH2">Paquetes Locales</h2>
-                            <div class="row">
+                        ||
+                        (
+                            <div class="container packages">
+                                <h2 class="titles--subtitlesH2">Paquetes Locales</h2>
+                                <div class="row">
 
-                                <ItemList categoryId={categoryId} />
+                                    <ItemList categoryId={categoryId} />
 
+                                </div>
                             </div>
-                        </div>
-                    )}
+                        )}
+
+                    <ItemCount initial={1} stock={10} onAdd={onAdd} />
 
                 </section>
             </main>

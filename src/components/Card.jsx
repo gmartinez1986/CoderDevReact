@@ -1,5 +1,6 @@
+import { Link } from 'react-router-dom'
 
-const Card = ({name, price, image, description}) => {
+function Card({ id, name, price, image, description }){
     return (
         <>
             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -10,7 +11,11 @@ const Card = ({name, price, image, description}) => {
                         <h5 class="card-title">{name}</h5>
                         <p class="card-text">{description}</p>
                         <p><b>Precio: $ {price.toLocaleString('es-es')}</b></p>
-                        <button offerid="11" class="btn btn-invert btn-md btnAddOffer">Detalle del producto</button>
+                        <Link to={`/detail/${id}`} >
+                            <button class="btn btn-invert btn-md btnAddOffer">
+                                Detalle del producto
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>
