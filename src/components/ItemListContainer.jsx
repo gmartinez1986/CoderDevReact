@@ -1,10 +1,5 @@
-import ItemCount from '../components/ItemCount';
 import ItemList from '../components/ItemList';
 import { useParams } from "react-router-dom"
-
-const onAdd = (cant) => {
-    alert(`Se han agregado ${cant}  paquetes turisticos al carrito`);
-}
 
 function ItemListContainer() {
 
@@ -37,8 +32,6 @@ function ItemListContainer() {
                                 </div>
                             </div>
                         )}
-
-                    <ItemCount initial={1} stock={10} onAdd={onAdd} />
 
                 </section>
             </main>

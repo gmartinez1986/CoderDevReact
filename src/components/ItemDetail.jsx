@@ -1,4 +1,9 @@
 import React from 'react';
+import ItemCount from '../components/ItemCount';
+
+const onAdd = (cant) => {
+    alert(`Se han agregado ${cant}  paquetes turisticos al carrito`);
+}
 
 const ItemDetail = ({ product }) => {
     return (
@@ -19,7 +24,8 @@ const ItemDetail = ({ product }) => {
             <div className="card-body">
                 <img src={require(`../assets/img/${product.image}`)} alt='' className='w-50' />
             </div>
-            <br />
+            <br />          
+            <ItemCount initial={1} stock={10} onAdd={onAdd} />
         </>
     )
 }

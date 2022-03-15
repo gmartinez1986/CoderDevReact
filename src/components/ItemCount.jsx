@@ -22,8 +22,6 @@ const ItemCount = ({ initial, stock, onAdd }) => {
 
     return (
         <>
-            <h3>Paquetes Turisticos</h3>
-            <br/>
             <p>Total de paquetes disponibles {stock}</p>
             <button onClick={subtract}> - </button>
             <label> {count} </label>
