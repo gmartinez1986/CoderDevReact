@@ -35,6 +35,7 @@ function App() {
           <Route path='/' element={<ItemListContainer/>} />
           <Route path='/category/:categoryId' element={<ItemListContainer/>} />
 
+          <Route path='/*' element={ <Navigate to='/' replace /> } />
         </Routes>
       </BrowserRouter>
 
