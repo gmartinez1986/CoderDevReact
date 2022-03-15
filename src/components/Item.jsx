@@ -1,6 +1,6 @@
+import { Link } from 'react-router-dom'
 
-
-function Item({ name, image, price, description }) {
+function Item({ id ,name, image, price, description }) {
 
     return (
         <>
@@ -17,10 +17,13 @@ function Item({ name, image, price, description }) {
                             <p class="offers__offerContainer--price">$ {price.toLocaleString('es-es')}</p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#myModal"
-                                class="btn btn-invert btn-md">
-                                <span>Detalle del producto</span>
-                            </a>
+
+                            <Link to={`detail/${id}`} >
+                                <button className="btn btn-invert btn-md">
+                                    Detalle del producto
+                                </button>
+                            </Link>
+
                         </div>
                     </div>
                 </div>

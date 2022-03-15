@@ -40,11 +40,11 @@ function ItemList({ greeting }) {
                 packages.map((pack) =>
 
                     categoryId === undefined && (
-                        <Item idPack={pack.id} name={pack.name} image={pack.image} price={pack.price} description={pack.description} />
+                        <Item id={pack.id} name={pack.name} image={pack.image} price={pack.price} description={pack.description} />
                     ) 
                     ||
                     (
-                        <Card idPack={pack.id} name={pack.name} image={pack.imageDescription} price={pack.price} description={pack.description}/>
+                        <Card id={pack.id} name={pack.name} image={pack.imageDescription} price={pack.price} description={pack.description}/>
                     )
                 )
             }
