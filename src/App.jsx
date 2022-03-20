@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import { Helmet } from "react-helmet";
 
 import './App.css';
+import CartContextProvider from './context/CartContext';
 
 function App() {
   return (
@@ -28,19 +29,21 @@ function App() {
           crossorigin="anonymous"></script>
       </Helmet>
 
-      <BrowserRouter>
-        <header className="header">
-          <NavBar />
-        </header>
-        <Routes>
-          <Route path='/' element={<ItemListContainer/>} />
-          <Route path='/category/:categoryId' element={<ItemListContainer/>} />
-          <Route path='/detail/:detailId' element={<ItemDetailContainer />} />
-          <Route path='/cart' element={<Cart />} />
+      <CartContextProvider>
+        <BrowserRouter>
+          <header className="header">
+            <NavBar />
+          </header>
+          <Routes>
+            <Route path='/' element={<ItemListContainer />} />
+            <Route path='/category/:categoryId' element={<ItemListContainer />} />
+            <Route path='/detail/:detailId' element={<ItemDetailContainer />} />
+            <Route path='/cart' element={<Cart />} />
 
-          <Route path='*' element={ <Navigate to='/' replace /> } />
-        </Routes>
-      </BrowserRouter>
+            <Route path='*' element={<Navigate to='/' replace />} />
+          </Routes>
+        </BrowserRouter>
+      </CartContextProvider>
 
       <Footer />
     </>
