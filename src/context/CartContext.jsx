@@ -26,29 +26,27 @@ export const CartContextProvider = ({ children }) => {
             setCartList(arrAux)
 
         } else {
-            
+
             setCartList([...cartList, items])
 
         }
     }
 
     const totalPrice = () => {
-        return cartList.reduce((acum, prod) => acum + (prod.cantidad * prod.precio), 0)
+        return cartList.reduce((acum, prod) => acum + (prod.cantidad * prod.precio), 0);
     }
 
     const removeItem = (id) => {
-        setCartList(cartList.filter(prod => prod.id !== id))
+        setCartList(cartList.filter(prod => prod.id !== id));
     }
 
     const quantityItem = () => {
-        return cartList.reduce((acum, item) => acum = acum + item.cantidad, 0)
+        return cartList.reduce((acum, item) => acum = acum + item.cantidad, 0);
     }
 
     function emptyCart() {
-        setCartList([])
+        setCartList([]);
     }
-
-    console.log(cartList)
 
     return (
         <cartContext.Provider value={{
