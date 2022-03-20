@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import Card  from "./Card";
+import ItemCard  from "./ItemCard";
 import getFetch from "../helpers/getFetch";
 import Item from "./Item";
 
@@ -44,7 +44,7 @@ function ItemList({ greeting }) {
                     ) 
                     ||
                     (
-                        <Card id={pack.id} name={pack.name} image={pack.imageDescription} price={pack.price} description={pack.description}/>
+                        <ItemCard id={pack.id} name={pack.name} image={pack.imageDescription} price={pack.price} description={pack.description}/>
                     )
                 )
             }

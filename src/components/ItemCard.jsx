@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-function Card({ id, name, price, image, description }){
+function ItemCard({ id, name, price, image, description }){
     return (
         <>
             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -23,4 +23,4 @@ function Card({ id, name, price, image, description }){
     )
 }
 
-export default Card;
+export default ItemCard;
