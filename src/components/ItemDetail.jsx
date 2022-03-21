@@ -10,9 +10,9 @@ const ItemDetail = ({ product }) => {
     const { addToCart, cartList } = useCartContext();
 
     const onAdd = cant => {
-        console.log(cant)
-        setCount(cant)
-        addToCart({ ...product, cantidad: cant })
+
+        setCount(cant);
+        addToCart({ ...product, cantidad: cant });
     }
 
     return (
