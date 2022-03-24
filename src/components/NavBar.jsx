@@ -6,8 +6,12 @@ import '../styles/css/bootstrap.css';
 import companyLogo from '../assets/img/turismo-min.png';
 import { Link } from 'react-router-dom'
 import CartWidget from '../components/CartWidget';
+import { useCartContext } from "../context/CartContext"
 
 const Navbar = () => {
+
+	const { quantityItem } = useCartContext();
+
 	return (
 		<nav className="navbar navbar-expand-md navbar-light header__containerHeader">
 			<div className="container-fluid justify-content-end">
@@ -46,7 +50,9 @@ const Navbar = () => {
 						</li>
 						<li className="nav-item"><a className="nav-link" href=""><b>OFERTAS</b></a></li>
 
-						<CartWidget />
+                        {quantityItem() > 0 ?
+                         <CartWidget /> : null
+						}
 
 						<li className="nav-item"><a className="nav-link" href=""><span
 							className="material-icons email">email</span></a></li>

@@ -18,7 +18,7 @@ const CartWidget = () => {
             <Link to="/cart" >
                 <a className="nav-link" href="">
                     <span className='material-icons'>shopping_cart</span>
-                    <span {...cssClass}>{count > 0 ? count:""}</span>
+                    <span {...cssClass}>{count}</span>
                 </a>
             </Link>
         </li>
