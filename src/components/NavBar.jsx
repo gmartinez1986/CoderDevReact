@@ -50,8 +50,8 @@ const Navbar = () => {
 						</li>
 						<li className="nav-item"><a className="nav-link" href=""><b>OFERTAS</b></a></li>
 
-                        {quantityItem() > 0 ?
-                         <CartWidget /> : null
+						{quantityItem() > 0 ?
+							<CartWidget /> : null
 						}
 
 						<li className="nav-item"><a className="nav-link" href=""><span
