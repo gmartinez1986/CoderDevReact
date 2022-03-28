@@ -25,6 +25,6 @@ const ItemList = memo(
 
             </>
         )
-    }, (oldProps, newProps) => oldProps.categoryId === newProps.categoryId);
+    }, (oldProps, newProps) => oldProps.packages.categoryId !== newProps.packages.categoryId);
 
 export default ItemList;
