@@ -3,16 +3,16 @@ import ItemCount from '../components/ItemCount';
 import { Link } from 'react-router-dom'
 import { useCartContext } from "../context/CartContext"
 
-const ItemDetail = ({ product }) => {
+const ItemDetail = ({ pack }) => {
 
     const [count, setCount] = useState(null);
 
-    const { addToCart, cartList } = useCartContext();
+    const { addToCart } = useCartContext();
 
     const onAdd = cant => {
 
         setCount(cant);
-        addToCart({ ...product, cantidad: cant });
+        addToCart({ ...pack, cantidad: cant });
     }
 
     return (
@@ -33,14 +33,14 @@ const ItemDetail = ({ product }) => {
             }
             <br />
             <br />
-            Nombre del Paquete: {product.name}
+            Nombre del Paquete: {pack.name}
             <br />
-            Detalle: {product.description}
+            Detalle: {pack.description}
             <br />
-            Precio: $ {product.price.toLocaleString('es-es')}
+            Precio: $ {pack.price.toLocaleString('es-es')}
             <br />
             <div className="card-body">
-                <img src={require(`../assets/img/${product.image}`)} alt='' className='w-50' />
+                <img src={require(`../assets/img/${pack.image}`)} alt='' className='w-50' />
             </div>
             <br />
         </>

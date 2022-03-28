@@ -10,7 +10,6 @@ function ItemListContainer({ greeting }) {
     const [packages, setPackages] = useState([]);
     const [loading, setLoading] = useState(true);
 
-
     useEffect(() => {
 
         let catergory = categoryId !== undefined ? categoryId : "offers";
