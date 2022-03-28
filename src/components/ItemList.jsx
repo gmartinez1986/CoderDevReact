@@ -6,9 +6,6 @@ import Item from "./Item";
 const ItemList = memo(
     ({ packages }) => {
 
-
-        console.log(packages);
-
         const { categoryId } = useParams();
 
         return (
