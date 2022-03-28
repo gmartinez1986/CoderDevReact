@@ -58,6 +58,46 @@ export const CartContextProvider = ({ children }) => {
 
     }
 
+    const reduceQuantityItem = (item) => {
+
+        const index = cartList.findIndex(i => i.id === item.id)
+
+        const qtyOld = cartList[index].cantidad;
+
+        let qtyNew = qtyOld - 1;
+
+        if (qtyNew > 0) {
+
+            cartList[index].cantidad = qtyNew;
+
+            let arrAux = [...cartList];
+
+            setCartList(arrAux);
+
+        } else {
+
+            removeItem(item.id);
+
+        }
+
+    }
+
+    const increaseQuantityItem = (item) => {
+
+        const index = cartList.findIndex(i => i.id === item.id)
+
+        const qtyOld = cartList[index].cantidad;
+
+        let qtyNew = qtyOld + 1;
+
+        cartList[index].cantidad = qtyNew;
+
+        let arrAux = [...cartList];
+
+        setCartList(arrAux);
+
+    }
+
     return (
         <cartContext.Provider value={{
             cartList,
@@ -65,7 +105,9 @@ export const CartContextProvider = ({ children }) => {
             emptyCart,
             totalPrice,
             removeItem,
-            quantityItem
+            quantityItem,
+            reduceQuantityItem,
+            increaseQuantityItem
         }} >
             {children}
         </cartContext.Provider>
