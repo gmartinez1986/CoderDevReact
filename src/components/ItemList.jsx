@@ -1,56 +1,33 @@
-import { useState, useEffect } from "react";
+import { memo } from 'react'
 import { useParams } from "react-router-dom";
-import ItemCard  from "./ItemCard";
-import getFetch from "../helpers/getFetch";
+import ItemCard from "./ItemCard";
 import Item from "./Item";
 
-function ItemList({ greeting }) {
+const ItemList = memo(
+    ({ packages }) => {
 
-    const [packages, setPackages] = useState([]);
-    const [loading, setLoading] = useState(true);
 
-    const { categoryId } = useParams();
+        console.log(packages);
 
-    useEffect(() => {
+        const { categoryId } = useParams();
 
-        if (categoryId) {
-            getFetch
-                .then((response) => {
-                    return response
-                })
-                .then((resp) => setPackages(resp.filter(pro => pro.categoryId === categoryId)))
-                .catch(err => console.log(err))
-                .finally(() => setLoading(false));
-        } else {
-            getFetch
-                .then((response) => {
-                    return response
-                })
-                .then((resp) => setPackages(resp.filter(pro => pro.categoryId === "offers")))
-                .catch(err => console.log(err))
-                .finally(() => setLoading(false));
-        }
+        return (
+            <>
+                {
+                    packages.map((pack) =>
 
-    }, [categoryId]);
-
-    return (
-        <>
-            <h1>{greeting}</h1>
-            {loading ? <h1>Cargando...</h1> :
-                packages.map((pack) =>
-
-                    categoryId === undefined && (
-                        <Item id={pack.id} name={pack.name} image={pack.image} price={pack.price} description={pack.description} />
-                    ) 
-                    ||
-                    (
-                        <ItemCard id={pack.id} name={pack.name} image={pack.imageDescription} price={pack.price} description={pack.description}/>
+                        categoryId === undefined && (
+                            <Item id={pack.id} name={pack.name} image={pack.image} price={pack.price} description={pack.description} />
+                        )
+                        ||
+                        (
+                            <ItemCard id={pack.id} name={pack.name} image={pack.imageDescription} price={pack.price} description={pack.description} />
+                        )
                     )
-                )
-            }
+                }
 
-        </>
-    );
-};
+            </>
+        )
+    }, (oldProps, newProps) => oldProps.categoryId === newProps.categoryId);
 
 export default ItemList;
