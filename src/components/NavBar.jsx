@@ -46,7 +46,11 @@ const Navbar = () => {
 									href=""><b>ARGENTINA</b></a>
 							</Link>
 						</li>
-						<li className="nav-item"><a className="nav-link" href=""><b>DESTINOS</b></a>
+						<li className="nav-item">
+							<Link to="Destinations" >
+								<a className="nav-link"
+									href=""><b>DESTINOS</b></a>
+							</Link>
 						</li>
 						<li className="nav-item"><a className="nav-link" href=""><b>OFERTAS</b></a></li>
 

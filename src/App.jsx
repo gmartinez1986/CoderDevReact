@@ -4,6 +4,7 @@ import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import Cart from './components/Cart';
 import Footer from './components/Footer';
+import Destinations from './components/Destinations';
 import { Helmet } from "react-helmet";
 
 import './App.css';
@@ -39,6 +40,7 @@ function App() {
             <Route path='/category/:categoryId' element={<ItemListContainer />} />
             <Route path='/detail/:detailId' element={<ItemDetailContainer />} />
             <Route path='/cart' element={<Cart />} />
+            <Route path='/Destinations' element={<Destinations />} />
 
             <Route path='*' element={<Navigate to='/' replace />} />
           </Routes>
