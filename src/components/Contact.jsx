@@ -1,5 +1,10 @@
 
 import { useState } from "react";
+import {
+    addDoc,
+    collection,
+    getFirestore
+} from "firebase/firestore"
 
 function Contact() {
 
@@ -30,7 +35,7 @@ function Contact() {
             evt.preventDefault();
     }
 
-    function sendContact() {
+    const sendContact = async () => {
 
         let name = dataForm.name;
         let surname = dataForm.surname;
@@ -45,17 +50,19 @@ function Contact() {
         //Validar info ingresada.
         if (contact.ValidateContact()) {
 
-            //Hago una llamada GET utilizando AJAX, para obtener los personajes de Harry Potter.
-            /*  $.ajax({
-                  method: "GET",
-                  url: "http://hp-api.herokuapp.com/api/characters",
-                  success: function (res) {
-  
-                      $('#frmContact').trigger("reset");
-                      //Tomo el nombre del primer personaje.
-                      alert(`Se envió la información, ${res[0].name} te agradece.`);
-                  }
-              });*/
+            const current = new Date();
+
+            let contact = {}
+
+            contact.client = dataForm;
+            contact.date = `${current.getDate()}/${current.getMonth() + 1}/${current.getFullYear()}`;
+
+            const db = getFirestore();
+            const queryCollectionSet = collection(db, 'contacts');
+            addDoc(queryCollectionSet, contact)
+                .then(resp => alert(`Gracias por contacterse con nosotros ${contact.client.name} ${contact.client.surname}, su codigo de identificador de contacto es: ${resp.id}`))
+                .catch(err => console.error(err))
+                .finally(() => clearState());
         }
     }
 
