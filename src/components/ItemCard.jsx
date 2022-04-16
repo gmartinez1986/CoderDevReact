@@ -13,7 +13,7 @@ function ItemCard({ id, name, price, image, description }){
                         <p><b>Precio: $ {price.toLocaleString('es-es')}</b></p>
                         <Link to={`/detail/${id}`} >
                             <button class="btn btn-invert btn-md btnAddOffer">
-                                Detalle del producto
+                                Detalle del Producto
                             </button>
                         </Link>
                     </div>

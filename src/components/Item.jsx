@@ -20,7 +20,7 @@ function Item({ id ,name, image, price, description }) {
 
                             <Link to={`detail/${id}`} >
                                 <button className="btn btn-invert btn-md">
-                                    Detalle del producto
+                                    Detalle del Producto
                                 </button>
                             </Link>
 
