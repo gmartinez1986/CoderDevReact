@@ -1,4 +1,5 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import { Helmet } from "react-helmet";
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
@@ -6,7 +7,7 @@ import Cart from './components/Cart';
 import Footer from './components/Footer';
 import Destinations from './components/Destinations';
 import Offers from './components/Offers';
-import { Helmet } from "react-helmet";
+import Contact from './components/Contact';
 
 import './App.css';
 import CartContextProvider from './context/CartContext';
@@ -43,6 +44,7 @@ function App() {
             <Route path='/cart' element={<Cart />} />
             <Route path='/Destinations' element={<Destinations />} />
             <Route path='/Offers' element={<Offers />} />
+            <Route path='/Contact' element={<Contact />} />
 
             <Route path='*' element={<Navigate to='/' replace />} />
           </Routes>

@@ -3,10 +3,10 @@ import '../styles/font-awesome.css';
 import '../styles/font-google.css';
 import '../styles/css/bootstrap.css';
 
-import companyLogo from '../assets/img/turismo-min.png';
 import { Link } from 'react-router-dom'
-import CartWidget from '../components/CartWidget';
 import { useCartContext } from "../context/CartContext"
+import companyLogo from '../assets/img/turismo-min.png';
+import CartWidget  from '../components/CartWidget';
 
 const Navbar = () => {
 
@@ -63,8 +63,12 @@ const Navbar = () => {
 							<CartWidget /> : null
 						}
 
-						<li className="nav-item"><a className="nav-link" href=""><span
-							className="material-icons email">email</span></a></li>
+						<li className="nav-item">
+							<Link to="Contact" >
+								<a className="nav-link" href=""><span
+									className="material-icons email">email</span></a>
+							</Link>
+						</li>
 					</ul>
 				</div>
 			</div >
