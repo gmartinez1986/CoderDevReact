@@ -52,7 +52,12 @@ const Navbar = () => {
 									href=""><b>DESTINOS</b></a>
 							</Link>
 						</li>
-						<li className="nav-item"><a className="nav-link" href=""><b>OFERTAS</b></a></li>
+						<li className="nav-item">
+							<Link to="Offers" >
+								<a className="nav-link"
+									href=""><b>OFERTAS</b></a>
+							</Link>
+						</li>
 
 						{quantityItem() > 0 ?
 							<CartWidget /> : null

@@ -5,6 +5,7 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 import Cart from './components/Cart';
 import Footer from './components/Footer';
 import Destinations from './components/Destinations';
+import Offers from './components/Offers';
 import { Helmet } from "react-helmet";
 
 import './App.css';
@@ -41,6 +42,7 @@ function App() {
             <Route path='/detail/:detailId' element={<ItemDetailContainer />} />
             <Route path='/cart' element={<Cart />} />
             <Route path='/Destinations' element={<Destinations />} />
+            <Route path='/Offers' element={<Offers />} />
 
             <Route path='*' element={<Navigate to='/' replace />} />
           </Routes>
