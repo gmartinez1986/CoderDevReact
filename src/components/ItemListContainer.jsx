@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import ItemList from '../components/ItemList';
 import AboutUs from '../components/AboutUs';
+import PopUp from '../components/PopUp';
 import { useParams } from "react-router-dom";
 import { query, where, getDocs, collection, getFirestore } from "firebase/firestore"
 
@@ -82,7 +83,7 @@ function ItemListContainer({ greeting }) {
 
                 </section>
             </main>
-
+            <PopUp />
         </>
 
     );

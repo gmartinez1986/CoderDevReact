@@ -1,4 +1,3 @@
-import PopUp from '../components/PopUp';
 
 function AboutUs() {
 
@@ -44,9 +43,8 @@ function AboutUs() {
 
             </div>
 
-            <PopUp />
         </>
-        
+
     )
 }
 

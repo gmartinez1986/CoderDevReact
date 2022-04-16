@@ -1,4 +1,5 @@
 import AboutUs from '../components/AboutUs';
+import PopUp from '../components/PopUp';
 
 function Offers() {
 
@@ -73,6 +74,7 @@ function Offers() {
                     </div>
                 </section>
             </main>
+            <PopUp />
         </>
     )
 }
