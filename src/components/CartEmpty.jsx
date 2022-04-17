@@ -5,24 +5,17 @@ function CartEmpty() {
     return (
 
         <>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <b>Cart</b>
-            <br />
-            <br />
-            <p>No hay items seleccionados</p>
-            <br />
-            <br />
-            <Link to="/">
-                <button className='btn btn-primary'>Ir a las ofertas</button>
-            </Link>
-            <br />
-            <br />
-            <br />
+            <main className="main">
+                <h2 className="titles--subtitlesH2" id="title1">Carrito</h2>
+                <section className="main--grid">
+                    <h3 className="titles--subtitlesH3" id="title2">No hay items seleccionados</h3>
+                    <div className="container text-center" style={{height: "20rem"}}>
+                        <Link to="/">
+                            <button className='btn btn-primary'>Ir a los destacados</button>
+                        </Link>
+                    </div>
+                </section>
+            </main>
         </>
     )
 }
