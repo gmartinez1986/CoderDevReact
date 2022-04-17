@@ -101,7 +101,7 @@ function Contact() {
 
             if (this.surname.length < 3) {
                 alert("El Apellido debe tener por lo menos 3 caracteres");
-                document.getElementById("txtName").focus();
+                document.getElementById("txtSurname").focus();
                 return false;
             }
 
