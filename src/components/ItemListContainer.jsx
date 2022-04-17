@@ -86,7 +86,6 @@ function ItemListContainer({ greeting }) {
 
                                 </div>
                             </div>
-
                         )
                     }
 

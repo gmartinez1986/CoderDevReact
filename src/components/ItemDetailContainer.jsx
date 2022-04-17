@@ -19,15 +19,30 @@ const ItemDetailContainer = () => {
             .catch(err => console.log(err))
             .finally(() => setLoading(false));
 
-    }, [])
+    }, []);
 
     return (
         <>
-            {loading ? <div class="loading loader">Cargango...</div> :
-                <ItemDetail pack={pack}></ItemDetail>
-            }
+            <main class="main">
+                <section class="main--grid">
+                    {loading ?
+                        <div class="loader-wrapper loader-wrapper--9">
+                            <div class="loader loader--9">
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                            </div>
+                        </div> :
+                        <ItemDetail pack={pack}></ItemDetail>
+                    }
+                </section>
+            </main>
+
         </>
-    )
-}
+    );
+};
 
 export default ItemDetailContainer
