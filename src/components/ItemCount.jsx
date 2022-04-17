@@ -22,11 +22,12 @@ const ItemCount = ({ initial, stock, onAdd }) => {
 
     return (
         <>
-            <p>Total de paquetes disponibles {stock}</p>
-            <button onClick={subtract}> - </button>
-            <label> {count} </label>
-            <button onClick={add}> + </button><br />
-            <button onClick={addCart}>Add to Cart</button>
+            <p>Total de paquetes turisticos disponibles {stock}</p>
+            <button className='btn btn-invert btn-md' onClick={subtract}> - </button>
+            <label style={{margin: "1rem"}}>   {count}   </label>
+            <button className='btn btn-invert btn-md' onClick={add}> + </button><br />
+            <br/>
+            <button className='btn btn-invert btn-md' onClick={addCart}>Añadir al carrito</button>
         </>
     )
 }
