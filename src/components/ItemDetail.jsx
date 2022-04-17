@@ -19,9 +19,11 @@ const ItemDetail = ({ pack }) => {
         <>
             <div classNam="details__container">
                 <h2 className="titles--subtitlesH2">Detalle del Producto</h2>
-                <h3 className="titles--subtitlesH3" id="title2">{pack.name}</h3>
 
                 <div className="details__container">
+
+                    <h3 className="titles--subtitlesH3" id="title2">{pack.name}</h3>
+
                     <img src={require(`../assets/img/${pack.image}`)} alt='' class="details__container--img" />
 
                     <p className="details__container--text">{pack.description}</p>

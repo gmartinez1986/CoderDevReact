@@ -1,0 +1,21 @@
+.cart{
+    text-align: center;
+    background-color: #044179;
+    padding: 7em 0 0 0;
+    
+    &__formulario{
+        border-top: 1px solid white;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+        padding: 2%;
+        font-size: 1rem;
+        color: white;
+        background-color: #07549c;
+
+        &--inputText label{
+            display: inline-block;
+            margin: 0.65%;
+        }
+    }
+}
