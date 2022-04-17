@@ -23,7 +23,7 @@ const ItemDetailContainer = () => {
 
     return (
         <>
-            {loading ? <h1>Cargando...</h1> :
+            {loading ? <div class="loading loader">Cargango...</div> :
                 <ItemDetail pack={pack}></ItemDetail>
             }
         </>

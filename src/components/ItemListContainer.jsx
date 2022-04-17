@@ -60,8 +60,17 @@ function ItemListContainer({ greeting }) {
             <main class="main">
                 <section class="main--grid">
                     <h1>{greeting}</h1>
-
-                    {loading ? <h1>Cargando...</h1> :
+                    {loading ?
+                        <div class="loader-wrapper loader-wrapper--9">
+                            <div class="loader loader--9">
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                            </div>
+                        </div> :
                         (
                             <div className={`container ${categoryId === undefined ? "offers" : "packages"}`}>
                                 <h2 className="titles--subtitlesH2">{renderTitle(categoryId)}</h2>

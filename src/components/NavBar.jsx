@@ -1,8 +1,3 @@
-import '../styles/main.css';
-import '../styles/font-awesome.css';
-import '../styles/font-google.css';
-import '../styles/css/bootstrap.css';
-
 import { Link } from 'react-router-dom'
 import { useCartContext } from "../context/CartContext"
 import companyLogo from '../assets/img/turismo-min.png';

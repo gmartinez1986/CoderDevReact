@@ -1,3 +1,8 @@
+import './styles/main.css';
+import './styles/font-awesome.css';
+import './styles/font-google.css';
+import './styles/css/bootstrap.css';
+
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { Helmet } from "react-helmet";
 import NavBar from './components/NavBar';
