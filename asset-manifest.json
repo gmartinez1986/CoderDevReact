@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CoderDevReact/static/css/main.4b9f9671.css",
-    "main.js": "/CoderDevReact/static/js/main.f0b15d55.js",
+    "main.js": "/CoderDevReact/static/js/main.9da99380.js",
     "static/js/787.a9823623.chunk.js": "/CoderDevReact/static/js/787.a9823623.chunk.js",
     "static/media/fa-solid-900.svg": "/CoderDevReact/static/media/fa-solid-900.45690f4345fd0e303e35.svg",
     "static/media/fa-brands-400.svg": "/CoderDevReact/static/media/fa-brands-400.675f6734fc707ee98601.svg",
@@ -81,11 +81,11 @@
     "static/media/fa-regular-400.woff2": "/CoderDevReact/static/media/fa-regular-400.7a3337626410ca2f4071.woff2",
     "index.html": "/CoderDevReact/index.html",
     "main.4b9f9671.css.map": "/CoderDevReact/static/css/main.4b9f9671.css.map",
-    "main.f0b15d55.js.map": "/CoderDevReact/static/js/main.f0b15d55.js.map",
+    "main.9da99380.js.map": "/CoderDevReact/static/js/main.9da99380.js.map",
     "787.a9823623.chunk.js.map": "/CoderDevReact/static/js/787.a9823623.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4b9f9671.css",
-    "static/js/main.f0b15d55.js"
+    "static/js/main.9da99380.js"
   ]
 }
