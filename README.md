@@ -21,11 +21,11 @@ Node-sass: 7.0.1 ->
 I use this library to compile .scss files to css / Uso esta libreria para compilar archivos .scss a css
 
 Nodemon: 2.0.15 ->
-I use this library to automatically restart the node application when file changes in the directory are detected /
-Utilizo esta libreria para reiniciar automáticamente la aplicación node cuando se detectan cambios de archivo en el directorio
+I use this library to automatically restart the Node application when file changes in the directory are detected /
+Utilizo esta libreria para reiniciar automáticamente la aplicación Node cuando se detectan cambios de archivo en el directorio
 
 React: 17.0.2 ->
-I use React library for creating the user interface / Uso la libreria React para crear la interfaz de usuario
+I use React library to create the user interface / Uso la libreria React para crear la interfaz de usuario
 
 React-dom: 17.0.2 ->
 This package serves as the entry point to the DOM and server renderers for React / 
@@ -37,6 +37,6 @@ I use this library as the header of a document / Utilizo esta libreria como enca
 React-router-dom: 6.2.2 -> 
 I use this library to navigate between components / Uso esta libreria para navegar entre componentes
 
-React-scripts: 5.0.0
-React-scripts is a set of scripts to create react app / 
-React-scripts es un conjunto de scripts para crear aplicaciones react
+React-scripts: 5.0.0 ->
+React-scripts are a set of scripts to create react app / 
+React-scripts son un conjunto de scripts para crear aplicaciones react
