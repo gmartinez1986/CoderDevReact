@@ -6,7 +6,9 @@ Repositorio CoderHouse - Curso Desarrollo React - Proyecto E-commerce de Agencia
 
 Gabriel Martinez
 
-[Check my Linkedin] (https://www.linkedin.com/in/gabriel-martinez-72a361184/) / [Visita mi Linkedin] (https://www.linkedin.com/in/gabriel-martinez-72a361184/)
+[Check my Linkedin] (https://www.linkedin.com/in/gabriel-martinez-72a361184/) 
+
+[Visita mi Linkedin] (https://www.linkedin.com/in/gabriel-martinez-72a361184/)
 
 
 Dependencies / Dependencias:
